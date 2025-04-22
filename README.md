@@ -1,2 +1,5 @@
 # dpi-bypass-config
-(USE THIS FOR GOOD INTENTION) Configuration for bypassing ISP Deep Packet Inspection
+#### THIS IS ONLY FOR GOOD INTENTION, IF YOU VIOLATE THIS, CONSEQUENCES IS ALL YOURS.
+
+Configuration for bypassing ISP Deep Packet Inspection
+

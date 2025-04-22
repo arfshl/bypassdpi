@@ -1,0 +1,15 @@
+[Unit]
+Description=PowerTunnel
+After=network.target
+
+[Service]
+User=root
+Group=root
+WorkingDirectory=/home/alif/Applications/PowerTunnel
+Environment="PATH=/home/alif/Applications/PowerTunnel"
+ExecStart=sudo java -jar /home/alif/Applications/PowerTunnel/PowerTunnel.jar --start
+ExecReload=/bin/kill -s HUP $MAINPID
+RestartSec=5
+
+[Install]
+WantedBy=multi-user.target

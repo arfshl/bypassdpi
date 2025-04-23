@@ -10,7 +10,7 @@ echo Press any key if you're running it as administrator.
 pause
 sc stop "GoodbyeDPI"
 sc delete "GoodbyeDPI"
-sc create "GoodbyeDPI" binPath= "%CD%\%_arch%\goodbyedpi.exe -f 2 -e 2  --reverse-frag --max-payload -p -r -s -m -w
+sc create "GoodbyeDPI" binPath= "%CD%\%_arch%\goodbyedpi.exe -p -f 2 -e 2 
 sc description "GoodbyeDPI" "Passive Deep Packet Inspection blocker and Active DPI circumvention utility"
 sc start "GoodbyeDPI"
 

@@ -2,6 +2,9 @@
 # Situs resmi kami: https://bebasid.com/
 # Hosts ditulis oleh Komunitas Internet Netral Indonesia
 # Dengan mengunduh BEBASID dan menggunakan aplikasi ini berarti menerima dan setuju untuk terikat dan mematuhi ketentuan yang berada di dalam halaman berikut: https://github.com/bebasid/bebasid/blob/master/dev/readme/RULES.md
+
+# Only add legal, non-pornographic sites
+# reddit.com, duckduckgo.com, archive.org
  
 # MIT License
 

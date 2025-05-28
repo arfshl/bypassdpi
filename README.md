@@ -5,7 +5,7 @@ Configuration for bypassing ISP Deep Packet Inspection
 
 WARN: before applying this, use Encrypted DNS First!
 
-- [Android Secure DNS/Linux systemd-resolved DoT Upstream] (https://github.com/arfshl/adblock-dns-config/blob/main/docs/android-resolvers.md)
+- [Android Secure DNS/Linux systemd-resolved DoT Upstream](https://github.com/arfshl/adblock-dns-config/blob/main/docs/android-resolvers.md)
 
 - [Windows/Linux DoH Upstream](https://github.com/arfshl/adblock-dns-config/blob/main/docs/dns-resolvers.md)
 

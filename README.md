@@ -15,4 +15,6 @@ WARN: before applying this, use Encrypted DNS First!
 
 - [Android](https://github.com/krlvm/powertunnel-android), keep defaults.
 
-- [hosts.txt file, redirects to IP](https://github.com/arfshl/dpi-bypass-config/blob/main/hosts.txt)
+- [hosts.txt file, redirects to IP](https://raw.githubusercontent.com/arfshl/dpi-bypass-config/main/hosts.txt)
+
+- [blacklist.txt - list of domains that should be routed to proxy](https://raw.githubusercontent.com/arfshl/dpi-bypass-config/main/blacklist.txt)

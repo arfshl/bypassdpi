@@ -1,3 +1,2 @@
-duckduckgo.com
-reddit.com
-archive.org
+google.com
+cloudflare.com

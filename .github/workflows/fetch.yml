@@ -1,0 +1,41 @@
+name: Fetch tor
+
+on:
+  workflow_dispatch:
+  
+  
+permissions:
+  contents: write
+
+jobs:
+
+  fetch:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v5
+    - name: Fetch tor
+      run: |
+        wget -qi $GITHUB_WORKSPACE/url.txt
+    - name: Set disposable tag
+      run: |
+        timestamp=$(date +%Y%m%d-%H%M)
+        echo "TAG_NAME=$timestamp" >> $GITHUB_ENV
+    - name: Push to Release
+      uses: softprops/action-gh-release@v2
+      with:
+          tag_name: ${{ env.TAG_NAME }}
+          name: Download Tor
+          files: |
+            tor-*.apk
+            tor-*.tar.xz
+            tor-*.exe
+            tor-*.tar.gz
+            
+    env:
+      GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+
+
+

@@ -7,7 +7,7 @@ User=root
 Group=root
 WorkingDirectory=/home/$USER/PowerTunnel
 Environment="PATH=/home/$USER/PowerTunnel"
-ExecStart=sudo java -jar /home/$USER/PowerTunnel/PowerTunnel.jar --start
+ExecStart=java -jar /home/$USER/PowerTunnel/PowerTunnel.jar --start
 ExecReload=/bin/kill -s HUP $MAINPID
 RestartSec=5
 

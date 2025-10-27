@@ -7,7 +7,7 @@
 
 [Play Store](https://play.google.com/store/apps/details?id=ch.protonvpn.android)
 
-#### Using DPI Bypass Software (Harder but faster)
+#### Using DPI Bypass Software, and Encrypted DNS (Harder but faster)
 WARN: before applying this, use Encrypted DNS First!
 
 - [Android Secure DNS/Linux systemd-resolved DoT Upstream](https://github.com/arfshl/adblock-dns-config/blob/main/docs/android-resolvers.md)

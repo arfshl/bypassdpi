@@ -7,8 +7,8 @@ User=root
 Group=root
 WorkingDirectory=/home/$USER/PowerTunnel
 Environment="PATH=/home/$USER/PowerTunnel"
-#ExecStart=/home/$USER/jdk8u472-b08-jre/bin/java -jar /home/$USER/PowerTunnel/PowerTunnel.jar --start --minimized
-ExecStart=java -jar /home/$USER/PowerTunnel/PowerTunnel.jar --start --minimized
+#ExecStart=/home/$USER/jdk8u472-b08-jre/bin/java -jar /home/$USER/PowerTunnel/PowerTunnel.jar --start
+ExecStart=java -jar /home/$USER/PowerTunnel/PowerTunnel.jar --start
 ExecReload=/bin/kill -s HUP $MAINPID
 RestartSec=5
 

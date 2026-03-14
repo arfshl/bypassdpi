@@ -1,3 +1,7 @@
+# Custom List
+# wikimeida.org
+103.102.166.224 auth.wikimedia.org
+
 # BEBASID - Peduli Internet Netral
 # Situs resmi kami: https://bebasid.com/
 # Hosts ditulis oleh Komunitas Internet Netral Indonesia
@@ -1337,6 +1341,7 @@
 52.149.246.39 shop.duckduckgo.com
 52.149.246.39 blog.duckduckgo.com
 52.149.246.39 news.duckduckgo.com
+40.114.178.124 icons.duckduckgo.com
 40.88.50.215 jve.duckduckgo.com
 20.99.229.0 dbp.duckduckgo.com
 52.149.246.39 api.duckduckgo.com

@@ -1,9 +1,11 @@
-# Custom List
-# wikimeida.org
+# wikimedia.org
 ## ipv4
 103.102.166.224 auth.wikimedia.org
 ## ipv6
 2001:df2:e500:ed1a::1 auth.wikimedia.org
+# duckduckgo.com
+20.43.161.105 html.duckduckgo.com
+20.43.161.105 lite.duckduckgo.com
 
 # BEBASID - Peduli Internet Netral
 # Situs resmi kami: https://bebasid.com/

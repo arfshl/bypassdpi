@@ -1,16 +1,10 @@
 # blocked good sites
 ## wikimedia.org
-### ipv4
 103.102.166.224 auth.wikimedia.org
-### ipv6
-2001:df2:e500:ed1a::1 auth.wikimedia.org
+103.102.166.224 commons.wikimedia.org
 ## duckduckgo.com
 20.43.161.105 html.duckduckgo.com
 20.43.161.105 lite.duckduckgo.com
-
-# non-blocked but seems to be effected
-## nodejs.org
-104.20.1.252 nodejs.org
 
 # BEBASID - Peduli Internet Netral
 # Situs resmi kami: https://bebasid.com/

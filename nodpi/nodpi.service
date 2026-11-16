@@ -1,0 +1,14 @@
+[Unit]
+Description=NoDPI
+After=network.target
+
+[Service]
+Type=simple
+WorkingDirectory=/home/$USER/nodpi
+StandardInput=null
+ExecStart=/home/$USER/nodpi/nodpi --host 127.0.0.1 --port 8881 --no-blacklist --quiet
+Restart=on-failure
+RestartSec=5
+
+[Install]
+WantedBy=default.target

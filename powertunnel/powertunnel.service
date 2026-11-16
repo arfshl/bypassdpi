@@ -3,14 +3,13 @@ Description=PowerTunnel
 After=network.target
 
 [Service]
-User=root
-Group=root
+Type=simple
 WorkingDirectory=/home/$USER/PowerTunnel
-Environment="PATH=/home/$USER/PowerTunnel"
-#ExecStart=/home/$USER/jdk8u472-b08-jre/bin/java -jar /home/$USER/PowerTunnel/PowerTunnel.jar --start
+StandardInput=null
 ExecStart=java -jar /home/$USER/PowerTunnel/PowerTunnel.jar --start
 ExecReload=/bin/kill -s HUP $MAINPID
+Restart=on-failure
 RestartSec=5
 
 [Install]
-WantedBy=multi-user.target
+WantedBy=default.target

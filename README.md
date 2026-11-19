@@ -38,3 +38,39 @@ WARN: before applying this, use Encrypted DNS First!
 - [PowerTunnel for Android](https://github.com/krlvm/powertunnel-android), keep defaults.
 - [hosts.txt file, redirects to IP](https://raw.githubusercontent.com/arfshl/bypassdpi/main/hosts.txt)
 - [idn-blacklist.txt file, domain that must be routed through anti-dpi](https://raw.githubusercontent.com/arfshl/bypassdpi/main/idn-blacklist.txt)
+
+### Tor Apps
+
+Orbot (Android): https://orbot.app/en/
+Tor Browser (Android, Windows, macOS, Linux): https://www.torproject.org/
+Onion Browser (iOS): https://onionbrowser.com/
+InviZible Pro (Android): https://invizible.net/en/
+Download Tor Browser via Telegram: @gettor_bot
+Download Tor Browser via Email: gettor@torproject.org
+
+```
+Send an email to gettor@torproject.org, and in the body of the message simply write "windows", "osx", "linux", or "android" (without quotation marks) depending on your operating system. For example, to get links for downloading Tor Browser for Windows, send an email to gettor@torproject.org with the word "windows" in it.
+
+GetTor will respond with an email containing links from which you can download the Tor Browser package, the cryptographic signature (needed for verifying the download), the fingerprint of the key used to make the signature, and the package's checksum. You may be offered a choice of "32-bit" or "64-bit" software: this depends on the model of the computer you are using.
+```
+
+**Local Proxy**
+Tor browser SOCKS: `127.0.0.1:9150`
+Orbot SOCKS: `127.0.0.1:9050`
+Orbot HTTP: `127.0.0.1:8118`
+
+**Bridge Priority**
+- obfs4
+- snowflake
+- snowflake amp
+- meek azure
+- Request from Telegram @TorProjectSupportBot or Email frontdesk@torproject.org, they may give you WebTunnel Bridges
+
+```
+When you reach out, include "private bridge cn/ru/tm/by" in your message (subject line or chat text) so our team can send you the right instructions more quickly.
+
+cn = china mainland
+ru = russia
+tm = turkmenistan
+by = belarus
+```

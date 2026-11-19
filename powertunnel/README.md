@@ -4,12 +4,16 @@
 
 2. Download latest PowerTunnel build [here](https://github.com/krlvm/PowerTunnel/releases/latest)
   
-3. Create an systemd service with: `sudo nano /home/$USER/.config/systemd/powertunnel.service`
+3. Create an systemd service with: `nano /home/$USER/.config/systemd/powertunnel.service`
 
 4. copy-paste [this file](https://github.com/arfshl/bypassdpi/blob/main/powertunnel/powertunnel.service) and replace `$USER` with your real username
   
 5. save it
   
-6. start the service with `systemctl --user daemon-reload && systemctl --user enable --now powertunnel && systemctl --user start powertunnel`
+6. start the service with:
+
+```
+systemctl --user daemon-reload && systemctl --user enable --now powertunnel && systemctl --user start powertunnel
+```
 
 7. set your browser or global proxy with address: `127.0.0.1:8085`

@@ -2,7 +2,7 @@
 
 1. Download latest GoodbyeDPI [here](https://github.com/ValdikSS/GoodbyeDPI/releases/latest) and extract
   
-2. Download both of this file and put to same directory as goodbyedpi installation:
+2. Download both of this file and put to same directory as goodbyedpi binary folder:
 
 - [Windows GoodbyeDPI - Run GoodbyeDPI](https://github.com/arfshl/bypassdpi/blob/main/goodbyedpi/run_idn.cmd)
 - [Windows GoodbyeDPI - Run GoodbyeDPI as Services](https://github.com/arfshl/bypassdpi/blob/main/goodbyedpi/service_install_idn.cmd)

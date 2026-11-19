@@ -1,0 +1,13 @@
+[Unit]
+Description=GreenTunnel
+After=network.target
+
+[Service]
+Type=simple
+StandardInput=null
+ExecStart=green-tunnel --host 127.0.0.1 --port 8900 --tls-records --no-system-proxy --quiet
+Restart=on-failure
+RestartSec=5
+
+[Install]
+WantedBy=default.target

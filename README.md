@@ -3,9 +3,9 @@
 
 ### Using VPN (Easy)
 
-- [ProtonVPN](https://protonvpn.com/) since this free, unlimited and safe to use but slower. Can used without account on Android, but need to use Play Store Version. Enable Proton Protocols and use Stealth if normal connection not working
+- [ProtonVPN](https://protonvpn.com/download) since this free, unlimited and safe to use but slower. Can used without account on Android and iOS, but need to use Play Store Version. Enable Proton Protocols and use Stealth if normal connection not working
 
-- [hide.me](https://hide.me), also free, unlimited, safe to use, can used without account. also have simple free browser proxy extension for simple bypass, based on malaysia.
+- [hide.me](https://hide.me/download), also free, unlimited, safe to use, can used without account. also have simple free browser proxy extension for simple bypass, based on malaysia.
 
 If normal connection not working, try to switching protocols, based on this priority
 

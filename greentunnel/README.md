@@ -1,6 +1,6 @@
 # How-to install GreenTunnel on Linux
 
-1. Install NodeJS from [fnm](https://github.com/schniz/fnm) or [NodeSource](https://nodesource.com/products/distributions)
+1. Install NodeJS from [fnm](https://github.com/schniz/fnm)
 
 2. Install GreenTunnel globally with npm: `npm install -g green-tunnel`
 

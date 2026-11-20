@@ -19,25 +19,32 @@ If normal connection not working, try to switching protocols, based on this prio
 5. Wireguard
 6. IKEv2
 
+
 ### Using DPI Bypass Software, and Encrypted DNS (Harder but faster)
-WARN: before applying this, use Encrypted DNS First!
+WARN: before using this DPI Bypass Software, use Encrypted DNS First.
 
 - [Recommended Encrypted DNS Upstream](https://github.com/arfshl/adblock-dns-config/blob/main/docs/dns-resolvers.md)
 
 **Reccomendation**
-- [GoodbyeDPI (Windows)](https://github.com/arfshl/tree/main/goodbyedpi)
-- [NoDPI CLI (Windows, Linux)](https://github.com/arfshl/bypassdpi/tree/main/nodpi)
-- [RethinkDNS App (Android)](https://play.google.com/store/apps/details?id=com.celzero.bravedns)
+- [Zapret2 (Windows, Linux, OpenWRT)](https://github.com/arfshl/bypassdpi/tree/main/zapret2)
+- [GoodbyeDPI (Windows)](https://github.com/arfshl/bypassdpi/tree/main/goodbyedpi)
 - [Greentunnel (Windows, macOS, Linux) GUI](https://github.com/sadeghhayeri/greentunnel)
-- Unicorn HTTPS (Android, Windows, iOS, macOS)
+- [Greentunnel CLI (Windows, Linux)](https://github.com/arfshl/bypassdpi/tree/main/greentunnel)
+- [RethinkDNS App (Android)](https://play.google.com/store/apps/details?id=com.celzero.bravedns)
+- [NoDPI v4 CLI (Windows, Linux)](https://github.com/arfshl/bypassdpi/tree/main/nodpi)
+- [NoDPI4Android](https://github.com/GVCoder09/NoDPI4Android)
+- [Darkware zapret (macOS)](https://github.com/roninreilly/darkware-zapret)
+- [PowerTunnel CLI (Windows, Linux)](https://github.com/arfshl/bypassdpi/tree/main/powertunnel)
+- [PowerTunnel for Android](https://github.com/krlvm/powertunnel-android), keep defaults.
+
+**Unicorn HTTPS is Closed Source and didn't have flexible DPI evading tricks**
+- Unicorn HTTPS (Android, Windows, iOS, macOS) 
   - https://getunicorn.app/en/product/unicorn-https/windows
   - https://apps.apple.com/kr/app/unicorn-https/id1466584968?l=en-GB
   - https://apps.apple.com/kr/app/unicorn-https/id1475628500?l=en-GB&mt=12
   - https://play.google.com/store/apps/details?id=kr.co.lylstudio.httpsguard&hl=en
-- [NoDPI4Android](https://github.com/GVCoder09/NoDPI4Android)
-- [Greentunnel CLI (Windows, Linux)](https://github.com/arfshl/bypassdpi/tree/main/greentunnel)
-- [PowerTunnel CLI (Windows, Linux)](https://github.com/arfshl/bypassdpi/tree/main/powertunnel)
-- [PowerTunnel for Android](https://github.com/krlvm/powertunnel-android), keep defaults.
+
+**Additional Resources**
 - [hosts.txt file, redirects to IP](https://raw.githubusercontent.com/arfshl/bypassdpi/main/hosts.txt)
 - [idn-blacklist.txt file, domain that must be routed through anti-dpi](https://raw.githubusercontent.com/arfshl/bypassdpi/main/idn-blacklist.txt)
 

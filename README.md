@@ -50,7 +50,7 @@ WARN: before using this DPI Bypass Software, use Encrypted DNS First.
 ##### Tor Apps (Heavy blockage scenario, slow speed)
 
 Orbot (Android): https://orbot.app/en/
-Tor Browser (Android, Windows, macOS, Linux): https://www.torproject.org/
+Tor Browser (Android, Windows, macOS, Linux): https://www.torproject.org https://tor.eff.org https://lacebolla.net
 Onion Browser (iOS): https://onionbrowser.com/
 InviZible Pro (Android): https://invizible.net/en/
 Download Tor Browser via Telegram: @gettor_bot
@@ -63,9 +63,9 @@ GetTor will respond with an email containing links from which you can download t
 ```
 
 **Local Proxy**
-Tor browser SOCKS: `127.0.0.1:9150`
-Orbot SOCKS: `127.0.0.1:9050`
-Orbot HTTP: `127.0.0.1:8118`
+- Tor browser SOCKS: `127.0.0.1:9150`
+- Orbot SOCKS: `127.0.0.1:9050`
+- Orbot HTTP: `127.0.0.1:8118`
 
 **Bridge Priority**
 - obfs4

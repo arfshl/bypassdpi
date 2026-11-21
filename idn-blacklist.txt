@@ -2,3 +2,6 @@ wikimedia.org
 duckduckgo.com
 archive.org
 reddit.com
+tor.eff.org
+archive.is
+archive.today

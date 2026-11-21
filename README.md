@@ -1,6 +1,6 @@
 ### THIS IS ONLY FOR GOOD INTENTION, IF YOU VIOLATE THIS, CONSEQUENCES IS ALL YOURS.
 
-##### Using VPN (Medium-to-High blockage scenario, Medium speed, Easy setup)
+#### Using VPN (Medium-to-High blockage scenario, Medium speed, Easy setup)
 
 - [ProtonVPN](https://protonvpn.com/download) since this free, unlimited and safe to use but slower. Can used without account on Android and iOS, but need to use Play Store Version. Enable Proton Protocols and use Stealth if normal connection not working
 
@@ -18,11 +18,12 @@ If normal connection not working, try to switching protocols, based on this prio
 5. Wireguard
 6. IKEv2
 
-
-##### Using DPI Bypass Software, and Encrypted DNS (Low-to-Medium blockage scenario, Higher speed)
+#### Using DPI Bypass Software, and Encrypted DNS (Low-to-Medium blockage scenario, Higher speed)
 WARN: before using this DPI Bypass Software, use Encrypted DNS First.
 
 - [Recommended Encrypted DNS Upstream](https://github.com/arfshl/adblock-dns-config/blob/main/docs/dns-resolvers.md)
+
+This is because Unencrypted UDP DNS in port `53` is filtered and redirected to ISP DNS, if you can't use Encrypted DNS, you can try use UDP DNS that support alternative port such like AdGuard and NextDNS in `5353` and Quad9 in `9953`. Encrypted DNS is still more reccomended over this method primarily DNS-Over-HTTPS and DNSCrypt because they run in port `443` like normal HTTPS and so harder to block
 
 **Reccomendation**
 - [Zapret2 (Windows, Linux, OpenWRT)](https://github.com/arfshl/bypassdpi/tree/main/zapret2)
@@ -49,12 +50,12 @@ WARN: before using this DPI Bypass Software, use Encrypted DNS First.
 
 ##### Tor Apps (Heavy blockage scenario, slow speed)
 
-Orbot (Android): https://orbot.app/en/
-Tor Browser (Android, Windows, macOS, Linux): https://www.torproject.org https://tor.eff.org https://lacebolla.net
-Onion Browser (iOS): https://onionbrowser.com/
-InviZible Pro (Android): https://invizible.net/en/
-Download Tor Browser via Telegram: @gettor_bot
-Download Tor Browser via Email: gettor@torproject.org
+- Orbot (Android): https://orbot.app/en/
+- Tor Browser (Android, Windows, macOS, Linux): https://www.torproject.org https://tor.eff.org https://lacebolla.net
+- Onion Browser (iOS): https://onionbrowser.com/
+- InviZible Pro (Android): https://invizible.net/en/
+- Download Tor Browser via Telegram: @gettor_bot
+- Download Tor Browser via Email: gettor@torproject.org
 
 ```
 Send an email to gettor@torproject.org, and in the body of the message simply write "windows", "osx", "linux", or "android" (without quotation marks) depending on your operating system. For example, to get links for downloading Tor Browser for Windows, send an email to gettor@torproject.org with the word "windows" in it.

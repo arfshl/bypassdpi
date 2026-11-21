@@ -7,11 +7,11 @@
 - [Windows zapret2 - Run zapret2](https://github.com/arfshl/bypassdpi/blob/main/zapret2/run_idn.cmd)
 - [Windows zapret2 - Run zapret2 as Services](https://github.com/arfshl/bypassdpi/blob/main/zapret2/service_install_idn.cmd)
 
-3. Execute service_install_idn.cmd as administrator and press enter
+3. Execute service_install_idn.cmd as administrator and press enter (or execute run_idn.cmd if you don't want it to run as a windows service)
 
 4. Done, now test it yourself by visiting blocked website
 
-5. You can use built-in `service_start.cmd` `service_stop.cmd` and `service_del.cmd`
+5. You can also use built-in `service_start.cmd` `service_stop.cmd` and `service_del.cmd`
 
 ## How to use Zapret2 on Linux and OpenWRT
 

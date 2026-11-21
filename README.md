@@ -1,7 +1,6 @@
-# Bypassing DPI/Blocking
-#### THIS IS ONLY FOR GOOD INTENTION, IF YOU VIOLATE THIS, CONSEQUENCES IS ALL YOURS.
+### THIS IS ONLY FOR GOOD INTENTION, IF YOU VIOLATE THIS, CONSEQUENCES IS ALL YOURS.
 
-### Using VPN (Easy)
+##### Using VPN (Medium-to-High blockage scenario, Medium speed, Easy setup)
 
 - [ProtonVPN](https://protonvpn.com/download) since this free, unlimited and safe to use but slower. Can used without account on Android and iOS, but need to use Play Store Version. Enable Proton Protocols and use Stealth if normal connection not working
 
@@ -20,7 +19,7 @@ If normal connection not working, try to switching protocols, based on this prio
 6. IKEv2
 
 
-### Using DPI Bypass Software, and Encrypted DNS (Harder but faster)
+##### Using DPI Bypass Software, and Encrypted DNS (Low-to-Medium blockage scenario, Higher speed)
 WARN: before using this DPI Bypass Software, use Encrypted DNS First.
 
 - [Recommended Encrypted DNS Upstream](https://github.com/arfshl/adblock-dns-config/blob/main/docs/dns-resolvers.md)
@@ -48,7 +47,7 @@ WARN: before using this DPI Bypass Software, use Encrypted DNS First.
 - [hosts.txt file, redirects to IP](https://raw.githubusercontent.com/arfshl/bypassdpi/main/hosts.txt)
 - [idn-blacklist.txt file, domain that must be routed through anti-dpi](https://raw.githubusercontent.com/arfshl/bypassdpi/main/idn-blacklist.txt)
 
-### Tor Apps
+##### Tor Apps (Heavy blockage scenario, slow speed)
 
 Orbot (Android): https://orbot.app/en/
 Tor Browser (Android, Windows, macOS, Linux): https://www.torproject.org/

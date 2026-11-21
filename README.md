@@ -2,7 +2,7 @@
 
 #### Using VPN (Medium-to-High blockage scenario, Medium speed, Easy setup)
 
-- [ProtonVPN](https://protonvpn.com/download) since this free, unlimited and safe to use but slower. Can used without account on Android and iOS, but need to use Play Store Version. Enable Proton Protocols and use Stealth if normal connection not working
+- [ProtonVPN](https://protonvpn.com/download) since this free, unlimited and safe to use but slower. Can used without account on Android and iOS. Based on Switzerland
 
 By default ProtonVPN detects cencorship and trying to bypass it automatically, but if normal connection still not working, try to switching protocols, to `Stealth` and enable `Proton Protocols`
 

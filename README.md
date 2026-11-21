@@ -6,7 +6,7 @@
 
 By default ProtonVPN detects cencorship and trying to bypass it automatically, but if normal connection still not working, try to switching protocols, to `Stealth` and enable `Proton Protocols`
 
-- [hide.me](https://hide.me/download), also free, unlimited, safe to use, can used without account. also have free proxy extension (unlike it's vpn service, this extension is not encrypted) on [chrome](https://hide.me/en/software/chrome-vpn), [firefox](https://hide.me/en/software/firefox-vpn), and [edge](https://hide.me/en/software/edge-vpn) for light dpi bypass, based on malaysia.
+- [hide.me](https://hide.me/download), also free, unlimited, safe to use, same speed like ProtonVPN, can used without account. also have free proxy extension (unlike it's vpn service, this extension is not encrypted) on [chrome](https://hide.me/en/software/chrome-vpn), [firefox](https://hide.me/en/software/firefox-vpn), and [edge](https://hide.me/en/software/edge-vpn) for light dpi bypass, based on malaysia.
 
 If normal connection not working, try to switching protocols, based on this priority
 

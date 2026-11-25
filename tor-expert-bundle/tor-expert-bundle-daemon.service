@@ -1,0 +1,15 @@
+[Unit]
+Description=Tor Expert Bundle Daemon
+After=network.target
+
+[Service]
+Type=simple
+WorkingDirectory=/home/$USER/<yourtordirectory>
+StandardInput=null
+ExecStart=/home/$USER/<yourtordirectory>/tor -f /home/$USER/<yourtordirectory>/torrc
+ExecReload=/bin/kill -s HUP $MAINPID
+Restart=on-failure
+RestartSec=5
+
+[Install]
+WantedBy=default.target

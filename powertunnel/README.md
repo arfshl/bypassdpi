@@ -4,9 +4,9 @@
 
 2. Download latest PowerTunnel build [here](https://github.com/krlvm/PowerTunnel/releases/latest)
   
-3. Create an systemd service with: `nano /home/$USER/.config/systemd/powertunnel.service`
+3. Create an systemd user service with: `nano /home/$USER/.config/systemd/powertunnel.service` (%h meaning your home direcotry `/home/user)
 
-4. copy-paste [this file](https://github.com/arfshl/bypassdpi/blob/main/powertunnel/powertunnel.service) and replace `$USER` with your real username
+4. copy-paste [this file](https://github.com/arfshl/bypassdpi/blob/main/powertunnel/powertunnel.service)
   
 5. save it
   

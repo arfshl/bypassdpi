@@ -4,9 +4,9 @@ After=network.target
 
 [Service]
 Type=simple
-WorkingDirectory=/home/$USER/nodpi
+WorkingDirectory=%h/nodpi
 StandardInput=null
-ExecStart=/home/$USER/nodpi/nodpi --host 127.0.0.1 --port 8881 --autoblacklist --quiet
+ExecStart=%h/nodpi/nodpi --host 127.0.0.1 --port 8881 --autoblacklist --quiet
 Restart=on-failure
 RestartSec=5
 

@@ -1,0 +1,143 @@
+# torrc for tor expert bundle
+# inspired from orbot for android settings
+# docs: https://manpages.debian.org/trixie/tor/torrc.5.en.html
+# https://support.torproject.org/little-t-tor/circumvention/using-bridges
+
+# Enable bridges
+# UseBridges 1
+
+# Executable to bridge plugin
+# UNIX (Linux, macOS, BSD)
+# ClientTransportPlugin obfs4,snowflake,webtunnel,meek_lite exec ./pluggable_transports/lyrebird
+# ClientTransportPlugin conjure exec ./pluggable_transports/conjure-client -registerURL https://registration.refraction.network/api
+
+# Windows
+# ClientTransportPlugin obfs4,snowflake,webtunnel,meek_lite exec .\pluggable_transports\lyrebird.exe
+# ClientTransportPlugin conjure exec .\pluggable_transports\conjure-client.exe -registerURL https://registration.refraction.network/api
+
+# Bridge List (Get it from Email bridges@torproject.org or Telegram @GetBridgesBot)
+# Bridge obfs4 <IP>:<PORT> <FINGERPRINT> cert=<CERT> iat-mode=0
+# Bridge snowflake 192.0.2.3:80 2B280B23E1107BB62ABFC40DDCC8824814F80A72 fingerprint=2B280B23E1107BB62ABFC40DDCC8824814F80A72 url=https://1098762253.rsc.cdn77.org front=www.phpmyadmin.net,cdn.zk.mk ice=stun:stun.antisip.com:3478,stun:stun.epygi.com:3478,stun:stun.uls.co.za:3478,stun:stun.voipgate.com:3478,stun:stun.mixvoip.com:3478,stun:stun.nextcloud.com:3478,stun:stun.bethesda.net:3478,stun:stun.nextcloud.com:443 utls-imitate=hellorandomizedalpn
+# Bridge webtunnel <IP:PORT> <FINGERPRINT> url=<URL> [ver=<VERSION>]
+# Bridge meek <IP:PORT> [fingerprint] url=<URL> [front=<DOMAIN>]
+
+# Isolate destination addresses
+# Use a different circuit for each destination address
+# IsolateDestAddr
+
+# Isolate destination ports
+# Use a different circuit for each destination port
+# IsolateDestPort
+
+# Isolate client protocols
+# Use a different circuit for each connecting protocol
+# IsolateClientProtocol
+
+# Tor SOCKS
+# Address and Port that Tor offers its SOCKS proxy on (default: 9050 or 0 to disable)
+SocksPort 127.0.0.1:9050 # IsolateDestAddr IsolateDestPort IsolateClientProtocol
+SocksPort [::1]:9050 # IsolateDestAddr IsolateDestPort IsolateClientProtocol
+
+# Tor HTTP
+# Port that Tor offers its HTTP proxy on (default: 8118 or 0 to disable)
+HTTPTunnelPort 127.0.0.1:8118 # IsolateDestAddr IsolateDestPort IsolateClientProtocol
+HTTPTunnelPort [::1]:8118 # IsolateDestAddr IsolateDestPort IsolateClientProtocol
+
+# Tor TransProxy Port
+# Port that Tor offers its Transparent Proxy on (default: 9040 or 0 to disable)
+# TransPort 127.0.0.1:auto # IsolateDestAddr IsolateDestPort IsolateClientProtocol
+# TransPort [::1]:auto # IsolateDestAddr IsolateDestPort IsolateClientProtocol
+
+# Tor DNS Port
+# Port that Tor offers its DNS on (default: 9053 or 0 to disable)
+DNSPort 127.0.0.1:auto
+DNSPort [::1]:auto
+
+# Prefer IPv6 connections
+# Tells exits that IPv6 addresses are preferred
+ClientUseIPv6 1
+ClientPreferIPv6ORPort 1
+
+# Disable IPv4 connections
+# Tells exits not to connect to IPv4 addresses
+# ClientUseIPv4 0
+
+# Keep isolated circuits alive
+# Keep isolated circuits alive that have at least one stream with SOCKS authentication active (default: 600)
+# MaxCircuitDirtiness 600
+
+# Reachable Addresses and Ports
+# ReachableAddresses *:80, *:443, [::]/0:80, [::]/0:443
+
+# Connection padding
+# Always enables connection padding to defend against some forms of traffic analysis. Default: auto
+ConnectionPadding 0
+
+# Reduced connection padding
+# Closes relay connections sooner and sends less padding packets to reduce data and battery usage
+ReducedConnectionPadding 1
+
+# Circuit padding
+# Enable circuit padding to defend against some forms of traffic analysis
+CircuitPadding 1
+
+# Reduced circuit padding
+# Use lower overhead padding algorithms to reduce data and battery usage
+ReducedCircuitPadding 1
+
+# Entrance Nodes
+# Fingerprints, nicks, countries and addresses for the first hop
+# EntryNodes {ch],{de},{nl},{is},{no}
+
+# Exit Nodes
+# Fingerprints, nicks, countries and addresses for the last hop
+# ExitNodes {ch],{de},{nl},{is},{no}
+
+# Exclude Nodes
+# Fingerprints, nicks, countries and addresses to exclude
+# ExcludeNodes {us,}{cn},{ru},{ir},{kp},{sy},192.0.2.0/24,$FINGERPRINT_RELAY
+
+# Exclude Exit Nodes
+# Fingerprints, nicks, countries and addresses to exclude for the last hop
+# ExcludeExitNodes {us,}{cn},{ru},{ir},{kp},{sy},192.0.2.0/24,$FINGERPRINT_RELAY
+
+# Strict Nodes
+# Treat Exclude Nodes settings as a requirement for building all circuits. This may break functionality if no circuits can be built with your Exclude Nodes settings.
+# StrictNodes 1
+
+# Outbound Network Proxy
+# HTTP
+# HTTPProxy host:port
+# HTTPProxyAuthenticator user:pass
+
+# HTTPS CONNECT
+# HTTPSProxy host:port
+# HTTPSProxyAuthenticator user:pass
+
+# SOCKS4
+# Socks4Proxy host:port
+
+# SOCKS5
+# Socks5Proxy host:port
+# Socks5ProxyUsername user
+# Socks5ProxyPassword pass
+
+# Sandbox 0|1
+# If set to 1, Tor will run securely through the use of a syscall sandbox. Otherwise the sandbox will be disabled. The option is currently an experimental feature. (Default: 0)
+# Sandbox 1
+
+# AvoidDiskWrites 0|1
+# If non-zero, try to write to disk less frequently than we would otherwise. This is useful when running on flash memory or other media that support only a limited number of writes. (Default: 0)
+# AvoidDiskWrites 1
+
+# Where to send logging messages.  Format is minSeverity[-maxSeverity]
+# (stderr|stdout|syslog|file FILENAME).
+Log notice stdout
+
+# CookieAuthentication 0|1
+# If this option is set to 1, allow connections on the control port when the connecting process knows the contents of a file named "control_auth_cookie", which Tor will create in its data directory. This authentication method should only be used on systems with good filesystem security. (Default: 0)
+# CookieAuthentication 1
+
+# DormantCanceledByStartup 0|1
+# By default, Tor starts in active mode if it was active the last time it was shut down, and in dormant mode if it was dormant. But if this option is true, Tor treats every startup event as user activity, and Tor will never start in Dormant mode, even if it has been unused for a long time on previous runs. (Default: 0)
+# DormantCanceledByStartup 1

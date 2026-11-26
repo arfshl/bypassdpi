@@ -4,7 +4,7 @@
   
 2. Create an systemd service with: `nano /home/$USER/.config/systemd/nodpi.service`
 
-3. copy-paste [this file](https://github.com/arfshl/bypassdpi/blob/main/nodpi/nodpi.service) and replace `$USER` with your real username
+3. copy-paste [this file](https://github.com/arfshl/bypassdpi/blob/main/nodpi/nodpi.service) (%h meaning your home direcotry `/home/user)
   
 4. save it
   

@@ -18,6 +18,8 @@ If normal connection not working, try to switching protocols, based on this prio
 5. Wireguard
 6. IKEv2
 
+- [RiseupVPN](https://riseup.net/en/vpn), free, open-source, donation-funded vpn service but with fewer server location, can used without account, based on United States (Seattle, Washington). This far they only use OpenVPN UDP/TCP Protocols with Wireguard support upcoming.
+
 ### Using DPI Bypass Software, and Encrypted DNS (Low-to-Medium blockage scenario, Higher speed)
 WARN: before using this DPI Bypass Software, use Encrypted DNS First.
 

@@ -4,9 +4,9 @@ After=network.target
 
 [Service]
 Type=simple
-WorkingDirectory=/home/$USER/<yourtordirectory>
+WorkingDirectory=%h/<yourtordirectory>
 StandardInput=null
-ExecStart=/home/$USER/<yourtordirectory>/tor -f /home/$USER/<yourtordirectory>/torrc
+ExecStart=%h/<yourtordirectory>/tor -f %h/<yourtordirectory>/torrc
 ExecReload=/bin/kill -s HUP $MAINPID
 Restart=on-failure
 RestartSec=5

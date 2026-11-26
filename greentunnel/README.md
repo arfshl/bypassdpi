@@ -6,7 +6,7 @@
 
 3. Create an systemd service with: `nano /home/$USER/.config/systemd/green-tunnel.service`
 
-4. copy-paste [this file](https://github.com/arfshl/bypassdpi/blob/main/GreenTunnel/green-tunnel.service) and replace `$USER` with your real username
+4. copy-paste [this file](https://github.com/arfshl/bypassdpi/blob/main/GreenTunnel/green-tunnel.service) (%h meaning your home direcotry `/home/user)
   
 5. save it
   

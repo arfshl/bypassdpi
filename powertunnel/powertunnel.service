@@ -4,9 +4,9 @@ After=network.target
 
 [Service]
 Type=simple
-WorkingDirectory=/home/$USER/PowerTunnel
+WorkingDirectory=%h/PowerTunnel
 StandardInput=null
-ExecStart=java -jar /home/$USER/PowerTunnel/PowerTunnel.jar --start
+ExecStart=java -jar %h/PowerTunnel/PowerTunnel.jar --start
 ExecReload=/bin/kill -s HUP $MAINPID
 Restart=on-failure
 RestartSec=5
